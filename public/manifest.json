@@ -1,12 +1,11 @@
 {
   "manifest_version": 3,
-  "version": "0.1.8",
-  "short_name": "Looppanel - Record & Transcribe Video",
-  "key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA32H8wGN4zMPs5shiXF3pwQi4eAc1LErywXhU/bPJspw6K8wnDa+QTlTqNXLnKgDRdtNdD5ivlYabXivSsqHgbekUlGAbFN3it8E9BWpEpUpED1xfphFV9ZkFwOJ2V7bA8rF6USWmrRPs+Lrp58biew+tlnKBuPvm1dtnb1A3Y63R1pUNh/eAKtMDBbURGyxfA7ozsDM8hDuuVOISX5Hby6IGHuSsMc/Hx/22Uo1vUOMNGERc0ZXebUOwRDJJFcYIQdYaEYYM//jbfmpXXwbtNUEMVvB5kOaCpY3IuyWGA5E6N+sxiAUqFmJBl+Yj1QoKWyuaXcviHPhe6QN8W8QJvQIDAQAB",
-  "name": "Looppanel - Record & Transcribe Video",
-  "description": "Automatically record & transcribe Google Meet & Zoom calls",
+  "version": "1.0.0",
+  "short_name": "Chrome Extension",
+  "name": "React Chrome Extension Manifest v3",
+  "description": "A simple chrome extension boilerplate in React with Manifest v3",
   "action": {
-    "default_title": "Looppanel - Record & Transcribe Video"
+    "default_title": "React Chrome Extension"
   },
   "background": {
     "service_worker": "background.bundle.js"

@@ -1,11 +1,15 @@
-// If your extension doesn't need a background script, just leave this file empty
+// // If your extension doesn't need a background script, just leave this file empty
 /*global chrome*/
-//Add pakcage import statements here
+// //Add pakcage import statements here
+console.log("Background Script running...")
+// // This function is called as soon as the background script is loaded
 
-// This function is called as soon as the background script is loaded
-handleExtentionIconClick();
+// // Listen for messages from content scripts.
+// chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+//     console.log('Message received from content script:', message.message);
+// });
 
-// Detecting install for chrome extension
+// // Detecting install for chrome extension
 chrome.runtime.onInstalled.addListener(function(details){
   if(details.reason == "install"){
       //call a function to handle a first install
@@ -17,15 +21,19 @@ chrome.runtime.onInstalled.addListener(function(details){
   }
 });
 
-//When clicked on the extension icon
-function handleExtentionIconClick(){
-  chrome.action.onClicked.addListener(function (tab) {
+// // Listen for messages from content scripts.
+// chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+//   if (message.from === 'content_script') {
+//     console.log('Message received from content script:', message.message);
+//   }
+// });
+
+// //When clicked on the extension icon
+chrome.action.onClicked.addListener(function (tab) {
     console.log("extention icon clicked");
     let clickedExtensionIcon = true
     openExtensionUI(clickedExtensionIcon)
-  });
-}
-
+});
 
 
 export function openExtensionUI(clickedExtensionIcon) {

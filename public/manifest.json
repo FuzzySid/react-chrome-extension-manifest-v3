@@ -27,7 +27,7 @@
     "128": "logo192.png"
   },
   "options_page": "options.html",
-  "permissions": ["storage","system.display","tabs","identity","identity.email"],
+  "permissions": ["storage","system.display","tabs"],
   "host_permissions": [
     "<all_urls>"
   ],
